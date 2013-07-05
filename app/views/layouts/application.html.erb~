@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CeleitySoft</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+<h1>Celeity Soft</h1>
+<%= link_to "Home", root_path%>
+<%= link_to "About Us", static_about_us_path%>
+<%= link_to "Contact Us", static_contact_us_path%>
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+development:
+  adapter: mysql
+  database: celeity_soft
+  pool: 5
+  username: root
+  password:

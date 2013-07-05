@@ -1,0 +1,11 @@
+<%= tinymce_assets %>
+
+<p>Contact Us</p>
+<h1>Send Email</h1>
+<%= form_for "", url: {action: "sendmail"}, html: {class: ""} do |f| %>
+  To: <%= text_field_tag :receiver %><br/>
+  Subject: <%= text_field_tag :subject %><br/>
+  Body: <%= text_area_tag :body,nil , :class => "tinymce",:cols=>100,:rows=>20  %><br/>
+  <%= submit_tag "Create" %>
+<% end %>
+<%= tinymce %>
